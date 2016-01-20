@@ -16,7 +16,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "build": "babel src --out-dir lib",
-    "preinstall": "npm run clean && npm run build",
+    "postinstall": "npm run clean && npm run build",
     "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
